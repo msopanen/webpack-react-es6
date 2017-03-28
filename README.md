@@ -1,2 +1,8 @@
-# webpack-react-es6
-Webpack Reac ES6 Boilerplate
+# Webpack React ES6
+Webpack React ES6 Boilerplate
+
+# Develop
+yarn run start
+
+# Build
+yarn run build
