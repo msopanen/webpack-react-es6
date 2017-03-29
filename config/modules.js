@@ -14,7 +14,33 @@ exports.common = ({ include, exclude, options }) => ({
                     { loader: "style-loader" },
                     { loader: "css-loader" }
                 ]
-            }
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/,
+                include,
+                exclude,
+
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[hash].[ext]',
+                        },
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        query: {
+                            progressive: true,
+                            optimizationLevel: 7,
+                            interlaced: false,
+                            pngquant: {
+                                quality: '65-90',
+                                speed: 4
+                            }
+                        }
+                    }
+                ]
+            },
         ],
     },
 });
