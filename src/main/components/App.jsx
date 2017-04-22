@@ -1,5 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 class App extends React.Component {
