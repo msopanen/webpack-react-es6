@@ -4,13 +4,15 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 class App extends React.Component {
+    
     static propTypes = {
-        counter: PropTypes.Number,
+        counter: PropTypes.number,
         onIncrement: PropTypes.func,
         onDecrement: PropTypes.func
     };
 
     render() {
+
         const { counter, onDecrement, onIncrement } = this.props;
 
         return (
@@ -20,18 +22,18 @@ class App extends React.Component {
                 <button onClick={onIncrement}>++</button>
             </div>
         );
-  }
+    }
 };
 
 const mapStateToProps = (state) => {
-  return state;
+    return state;
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    onIncrement: () => dispatch({ type: 'INCREMENT' }),
-    onDecrement: () => dispatch({ type: 'DECREMENT' })
-  }
+    return {
+        onIncrement: () => dispatch({ type: 'INCREMENT' }),
+        onDecrement: () => dispatch({ type: 'DECREMENT' })
+    }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
