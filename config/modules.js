@@ -22,7 +22,7 @@ exports.common = ({ include, exclude, options }) => ({
 
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader',
                         options: {
                             name: '[path][name].[hash].[ext]',
                         },
