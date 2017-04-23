@@ -1,39 +1,23 @@
 import React from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-class App extends React.Component {
+import Counter from "./Counter"
+import Reducer from "../reducers/Counter";
+
+// TODO: fix hmr of reducers -> https://github.com/reactjs/react-redux/releases/tag/v2.0.0
+
+const store = createStore(Reducer, { counter: 0 });
+
+export default class App extends React.Component {
     
-    static propTypes = {
-        counter: PropTypes.number,
-        onIncrement: PropTypes.func,
-        onDecrement: PropTypes.func
-    };
-
     render() {
-
-        const { counter, onDecrement, onIncrement } = this.props;
-
         return (
-            <div>
-                <div>{counter}</div>
-                <button onClick={onDecrement}>--</button>
-                <button onClick={onIncrement}>++</button>
-            </div>
+            <Provider store={store}>
+                <Counter />
+            </Provider>
         );
     }
 };
-
-const mapStateToProps = (state) => {
-    return state;
-};
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        onIncrement: () => dispatch({ type: 'INCREMENT' }),
-        onDecrement: () => dispatch({ type: 'DECREMENT' })
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);

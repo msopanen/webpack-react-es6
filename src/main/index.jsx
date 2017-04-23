@@ -1,27 +1,20 @@
 import "./styles/index.css";
 
 import * as React from "react";
+/**
+ * index.jsx is entry point of the application providing HMR that should stay unchanged.
+ * all development should happen in App.jsx and it subclasses
+ * 
+ * @author msopanen
+ */
 import * as ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-
 import App from "./components/App";
-import Reducer from "./reducers/Counter";
-
-/*ReactDOM.render (
-    <App />,
-    document.getElementById("root"),
-);*/
-
-const store = createStore(Reducer, { counter: 0 });
 
 const render = (Component) => 
 ReactDOM.render (
     <AppContainer>
-        <Provider store={store}>
-            <Component />
-        </Provider>
+        <Component />
     </AppContainer>,
     document.getElementById("root"),
 );
