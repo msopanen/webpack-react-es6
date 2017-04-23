@@ -1,15 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 import Counter from "./Counter"
-import Reducer from "../reducers/Counter";
+import configureStore from "../utils/StoreFactory";
 
-// TODO: fix hmr of reducers -> https://github.com/reactjs/react-redux/releases/tag/v2.0.0
-
-const store = createStore(Reducer, { counter: 0 });
+const store = configureStore({ counter: 0 });
 
 export default class App extends React.Component {
     
@@ -21,3 +18,4 @@ export default class App extends React.Component {
         );
     }
 };
+
