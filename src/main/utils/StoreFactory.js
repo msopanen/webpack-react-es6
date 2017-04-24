@@ -8,7 +8,7 @@ import Reducer from "../reducers/Counter";
  * 
  * @param {*} state 
  */
-export default function configureStore(state) {
+export default (state) => {
     const store = createStore(Reducer, state);
     
     if (module.hot) {
