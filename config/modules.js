@@ -1,12 +1,12 @@
 exports.common = ({ include, exclude, options }) => ({
     module: {
         rules: [
-            /*{
+            {
                 enforce: "pre",
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)?$/,
                 exclude: /node_modules/,
                 use: [ { loader: "eslint-loader" } ]
-            },*/
+            },
             {
                 test: /\.css$/,
                 exclude: /node_modules/,

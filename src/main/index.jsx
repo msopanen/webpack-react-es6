@@ -1,6 +1,5 @@
 import "./styles/index.css";
 
-import * as React from "react";
 /**
  * index.jsx is entry point of the application providing HMR that should stay unchanged.
  * all development should happen in App.jsx and it subclasses
@@ -17,15 +16,14 @@ ReactDOM.render (
     <AppContainer>
         <Component />
     </AppContainer>,
-    document.getElementById("root"),
+    document.getElementById("root")
 );
 
 render(App);
 
 if (module.hot) {
-    module.hot.accept('./components/App', () => {
-        console.log("toot")
-        const NextApp = require('./components/App').default;
+    module.hot.accept("./components/App", () => {
+        const NextApp = require("./components/App").default;
         render(NextApp);
     });
 }

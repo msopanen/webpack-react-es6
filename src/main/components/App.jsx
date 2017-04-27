@@ -1,9 +1,7 @@
-import React from 'react';
-import { render } from 'react-dom';
-import PropTypes from 'prop-types';
-import { Provider } from 'react-redux';
+import React from "react";
+import { Provider } from "react-redux";
 
-import Counter from "./Counter"
+import Counter from "./Counter";
 import configureStore from "../utils/StoreFactory";
 
 const store = configureStore({ counter: 0 });

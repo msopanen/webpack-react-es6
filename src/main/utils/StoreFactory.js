@@ -1,4 +1,4 @@
-import { createStore } from 'redux';
+import { createStore } from "redux";
 
 import Reducer from "../reducers/Counter";
 
@@ -6,7 +6,7 @@ import Reducer from "../reducers/Counter";
  * HMR for reducers 
  * https://github.com/reactjs/react-redux/releases/tag/v2.0.0
  * 
- * @param {*} state 
+ * @param {*} state - initila state
  */
 export default (state) => {
     const store = createStore(Reducer, state);
