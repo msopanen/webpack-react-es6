@@ -22,19 +22,19 @@ exports.common = ({ include, exclude, options }) => ({
 
                 use: [
                     {
-                        loader: 'url-loader',
+                        loader: "url-loader",
                         options: {
-                            name: '[path][name].[hash].[ext]',
+                            name: "[path][name].[hash].[ext]",
                         },
                     },
                     {
-                        loader: 'image-webpack-loader',
+                        loader: "image-webpack-loader",
                         query: {
                             progressive: true,
                             optimizationLevel: 7,
                             interlaced: false,
                             pngquant: {
-                                quality: '65-90',
+                                quality: "65-90",
                                 speed: 4
                             }
                         }
@@ -73,10 +73,10 @@ exports.development = ({ include, exclude, options }) => ({
 
 exports.devServer = ({ host, port, publicPath } = {}) => ({
   devServer: {
-    publicPath: '/',
+    publicPath: "/",
     historyApiFallback: true,
     hot: true,
-    stats: 'errors-only',
+    stats: "errors-only",
     host, // Defaults to `localhost`
     port, // Defaults to 8080
     overlay: {

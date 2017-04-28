@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+
+    "extends": "airbnb",
+    
+    "plugins": ["react"],
+
+    "parser": "babel-eslint",
+
+    "rules":{
+        "func-names": ["error","never"],
+        "quotes": ["error", "double"],
+        "indent": ["error", 4],
+        "global-require": ["off"],
+        "react/no-render-return-value": ["off"]
+    }
+}

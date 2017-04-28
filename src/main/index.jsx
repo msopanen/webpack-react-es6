@@ -1,22 +1,23 @@
-import "./styles/index.css";
-
 /**
  * index.jsx is entry point of the application providing HMR that should stay unchanged.
  * all development should happen in App.jsx and it subclasses
- * 
+ *
  * @author msopanen
  */
-import * as ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
 
 import App from "./components/App";
 
-const render = (Component) => 
-ReactDOM.render (
-    <AppContainer>
-        <Component />
-    </AppContainer>,
-    document.getElementById("root")
+import "./styles/index.css";
+
+const render = Component =>
+ReactDOM.render(
+  <AppContainer>
+    <Component />
+  </AppContainer>,
+    document.getElementById("root"),
 );
 
 render(App);
