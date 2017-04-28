@@ -11,16 +11,20 @@ Yarn(optional)
 - build can be done with yarn or npm commands, yarn is just faster
 
 # Supported features
-HMR
-TreeShaking
-Flux with Redux
-ES6
+- HMR
+- TreeShaking
+- Flux with Redux
+- ES6
+- ESLint with airbnb rules -> https://github.com/airbnb/javascript
 
 # Load dependencies
-yarn install|npm install
+yarn|npm install
 
 # Develop
-yarn run start|npm run start
+yarn|npm run start
 
 # Build
-yarn run build|npm run start
+yarn|npm run start
+
+# Lint (autofix errors)
+yarn|npm run lint src/main/index.jsx (--fix)
