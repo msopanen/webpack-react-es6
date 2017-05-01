@@ -5,11 +5,12 @@
   "main": "src/main/index.tsx",
   "scripts": {
     "build": "webpack --config config/production.config.js --colors -p",
-    "clean": "rimraf dist node_modules .awcache coverage",
+    "clean": "rimraf dist node_modules coverage",
     "start": "node config/server.js",
     "dev": "webpack-dev-server --config config/development.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "jest --config config/jest.json",
+    "watch-test": "yarn test -- --watch"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.4",
+    "react-test-renderer": "^15.5.4",
     "redux": "^3.6.0"
   },
   "devDependencies": {

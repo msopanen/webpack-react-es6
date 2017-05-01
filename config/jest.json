@@ -1,0 +1,8 @@
+{
+    "automock": false,
+    "testRegex": "(/src/spec/.*|\\.(test|spec))\\.(js|jsx)$",
+    "moduleFileExtensions": [
+        "js","jsx"
+    ],
+    "collectCoverage": true
+}
