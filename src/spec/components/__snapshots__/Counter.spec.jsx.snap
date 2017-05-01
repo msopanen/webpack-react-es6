@@ -17,21 +17,3 @@ exports[`renders initial state 0 properly 1`] = `
   </button>
 </div>
 `;
-
-exports[`renders properly 1`] = `
-<div>
-  <div>
-    0
-  </div>
-  <button
-    onClick={[Function]}
-  >
-    -
-  </button>
-  <button
-    onClick={[Function]}
-  >
-    +
-  </button>
-</div>
-`;

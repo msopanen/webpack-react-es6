@@ -17,6 +17,7 @@ it("renders initial state 0 properly",() => {
         <Counter store={store} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
+
 });
 
 /*it("renders properly", (done) => {
