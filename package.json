@@ -7,8 +7,7 @@
     "build": "webpack --config config/production.config.js --colors -p",
     "clean": "rimraf dist node_modules coverage",
     "start": "node config/server.js",
-    "dev": "webpack-dev-server --config config/development.config.js",
-    "lint": "eslint",
+    "lint": "eslint --ext .js --ext .jsx src/",
     "test": "jest --config config/jest.json",
     "watch-test": "yarn test -- --watch"
   },
