@@ -8,7 +8,7 @@ import Counter from "../../main/components/Counter";
 const middlewares = [];
 const mockStore = configureMockStore(middlewares);
 
-it("renders initial state 0 properly",() => {
+it("renders initial state 0 properly", () => {
 
     const getState = { counter: 0 }; // initial state of the store
 
