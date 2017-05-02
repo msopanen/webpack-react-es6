@@ -1994,6 +1994,10 @@ eslint-plugin-import@^2.2.0:
     minimatch "^3.0.3"
     pkg-up "^1.0.0"
 
+eslint-plugin-jest@^19.0.1:
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-19.0.1.tgz#42a420e90e81aa74e162c16166e43a31b890eece"
+
 eslint-plugin-jsx-a11y@next:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-4.0.0.tgz#779bb0fe7b08da564a422624911de10061e048ee"
@@ -4477,10 +4481,6 @@ reduce-function-call@^1.0.1:
 redux-mock-store@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/redux-mock-store/-/redux-mock-store-1.2.3.tgz#1b3ad299da91cb41ba30d68e3b6f024475fb9e1b"
-
-redux-thunk@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
 
 redux@^3.6.0:
   version "3.6.0"

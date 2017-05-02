@@ -1,5 +1,5 @@
 {
-  "name": "@fi.mps/react-webpack-es6",
+  "name": "@msopanen/react-webpack-es6",
   "version": "1.0.0",
   "description": "React Webpack ES6 Boilerplate",
   "main": "src/main/index.jsx",
@@ -32,10 +32,10 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.6",
-    "redux-mock-store": "^1.2.3",
-    "react-test-renderer": "^15.5.4",
     "react-redux": "^5.0.4",
-    "redux": "^3.6.0"
+    "react-test-renderer": "^15.5.4",
+    "redux": "^3.6.0",
+    "redux-mock-store": "^1.2.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -49,6 +49,7 @@
     "eslint-config-airbnb": "next",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "next",
     "eslint-plugin-react": "^6.10.3",
     "html-webpack-plugin": "^2.28.0",
