@@ -1,8 +1,8 @@
 {
-  "name": "react-webpack-ts",
+  "name": "@fi.mps/react-webpack-es6",
   "version": "1.0.0",
-  "description": "React Webpack TypeScript Boilerplate",
-  "main": "src/main/index.tsx",
+  "description": "React Webpack ES6 Boilerplate",
+  "main": "src/main/index.jsx",
   "scripts": {
     "build": "webpack --config config/production.config.js --colors -p",
     "clean": "rimraf dist node_modules coverage",
@@ -22,7 +22,8 @@
     "ESlint",
     "Jest",
     "HMR",
-    "Flux"
+    "Flux",
+    "Redux"
   ],
   "author": "msopanen",
   "license": "MIT",
