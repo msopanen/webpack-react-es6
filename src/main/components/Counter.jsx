@@ -8,8 +8,8 @@ const Counter = (props) => {
     return (
       <div>
         <div>{counter}</div>
-        <button onClick={onDecrement}>-</button>
-        <button onClick={onIncrement}>+</button>
+        <button name="+" onClick={onDecrement}>-</button>
+        <button name="-" onClick={onIncrement}>+</button>
       </div>
     );
 };

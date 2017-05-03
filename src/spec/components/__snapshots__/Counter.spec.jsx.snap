@@ -6,11 +6,13 @@ exports[`renders initial state 0 properly 1`] = `
     0
   </div>
   <button
+    name="+"
     onClick={[Function]}
   >
     -
   </button>
   <button
+    name="-"
     onClick={[Function]}
   >
     +
