@@ -1,21 +1,205 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders initial state 0 properly 1`] = `
-<div>
-  <div>
-    0
-  </div>
-  <button
-    name="+"
-    onClick={[Function]}
+exports[`renders initial state and plus and minus 1`] = `
+<Connect(Counter)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Counter
+    counter={0}
+    onDecrement={[Function]}
+    onIncrement={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
   >
-    -
-  </button>
-  <button
-    name="-"
-    onClick={[Function]}
+    <div>
+      <div
+        id="counter"
+      >
+        0
+      </div>
+      <button
+        id="plus"
+        onClick={[Function]}
+      >
+        -
+      </button>
+      <button
+        id="minus"
+        onClick={[Function]}
+      >
+        +
+      </button>
+    </div>
+  </Counter>
+</Connect(Counter)>
+`;
+
+exports[`renders initial state and plus and minus 2`] = `
+<Connect(Counter)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Counter
+    counter={-1}
+    onDecrement={[Function]}
+    onIncrement={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
   >
-    +
-  </button>
-</div>
+    <div>
+      <div
+        id="counter"
+      >
+        -1
+      </div>
+      <button
+        id="plus"
+        onClick={[Function]}
+      >
+        -
+      </button>
+      <button
+        id="minus"
+        onClick={[Function]}
+      >
+        +
+      </button>
+    </div>
+  </Counter>
+</Connect(Counter)>
+`;
+
+exports[`renders initial state and plus and minus 3`] = `
+<Connect(Counter)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Counter
+    counter={0}
+    onDecrement={[Function]}
+    onIncrement={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <div>
+      <div
+        id="counter"
+      >
+        0
+      </div>
+      <button
+        id="plus"
+        onClick={[Function]}
+      >
+        -
+      </button>
+      <button
+        id="minus"
+        onClick={[Function]}
+      >
+        +
+      </button>
+    </div>
+  </Counter>
+</Connect(Counter)>
 `;

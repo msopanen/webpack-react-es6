@@ -4,5 +4,16 @@
     "moduleFileExtensions": [
         "js","jsx"
     ],
-    "collectCoverage": true
+    "snapshotSerializers": [
+        "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
 }
