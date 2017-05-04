@@ -1,4 +1,4 @@
-import reduce from "../../main/reducers/Counter";
+import reduce from "./Counter";
 
 const state = { counter: 0 };
 

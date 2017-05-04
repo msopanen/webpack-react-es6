@@ -3,7 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import configureMockStore from "redux-mock-store";
 
-import Counter from "../../main/components/Counter";
+import Counter from "./Counter";
 
 const middlewares = [];
 const mockStore = configureMockStore(middlewares);
