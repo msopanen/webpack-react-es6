@@ -1,6 +1,6 @@
 {
     "automock": false,
-    "testRegex": "(/src/spec/.*|\\.(test|spec))\\.(js|jsx)$",
+    "testRegex": "(/src/main/.*|\\.)(spec.js|spec.jsx)$",
     "moduleFileExtensions": [
         "js","jsx"
     ],

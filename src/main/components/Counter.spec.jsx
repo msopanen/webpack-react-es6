@@ -1,17 +1,13 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import configureMockStore from "redux-mock-store";
 
 import Counter from "./Counter";
+import configureStore from "../utils/StoreFactory";
 
-const middlewares = [];
-const mockStore = configureMockStore(middlewares);
-
-const getState = () => ({ counter: 0 }); // initial state of the store
+const store = configureStore({ counter: 0 });
 
 it("renders initial state 0 properly", () => {
-    const store = mockStore(getState);
     const tree = renderer.create(
       <Counter store={store} />,
     ).toJSON();
