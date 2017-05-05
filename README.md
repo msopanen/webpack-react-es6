@@ -16,6 +16,7 @@ Yarn(optional)
 - Flux with Redux
 - ES6
 - ESLint with airbnb rules -> https://github.com/airbnb/javascript
+- Unit testing with Jest and Enzyme
 
 # Load dependencies
 yarn|npm install
