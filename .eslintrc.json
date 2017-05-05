@@ -9,7 +9,7 @@
 
     "extends": [ "airbnb", "plugin:jest/recommended" ],
     
-    "plugins": [ "react", "jest" ],
+    "plugins": [ "react", "jest", "import" ],
 
     "parser": "babel-eslint",
 
@@ -17,7 +17,8 @@
         "func-names": ["error","never"],
         "quotes": ["error", "double"],
         "indent": ["error", 4],
-        "global-require": ["off"],
-        "react/no-render-return-value": ["off"]
+
+        // ignores import/no-extraneous-dependencies for spec files
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.spec.{js,jsx}"]}]
     }
 }

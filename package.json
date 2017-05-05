@@ -28,13 +28,11 @@
   "author": "msopanen",
   "license": "MIT",
   "dependencies": {
-    "enzyme": "^2.8.2",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.4",
-    "react-test-renderer": "^15.5.4",
     "redux": "^3.6.0"
   },
   "devDependencies": {
@@ -45,6 +43,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.1",
+    "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "next",

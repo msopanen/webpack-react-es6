@@ -14,7 +14,9 @@ export default (state) => {
     if (module.hot) {
         // Enable Webpack hot module replacement for reducers
         module.hot.accept("../reducers/Counter", () => {
+            /* eslint-disable global-require */
             const nextRootReducer = require("../reducers/Counter").default;
+            /* eslint-enable global-require */
             store.replaceReducer(nextRootReducer);
         });
     }

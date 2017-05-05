@@ -12,6 +12,7 @@ import App from "./components/App";
 
 import "./styles/index.css";
 
+/* eslint-disable react/no-render-return-value */
 const render = Component =>
 ReactDOM.render(
   <AppContainer>
@@ -19,12 +20,15 @@ ReactDOM.render(
   </AppContainer>,
     document.getElementById("root"),
 );
+/* eslint-enable react/no-render-return-value */
 
 render(App);
 
 if (module.hot) {
     module.hot.accept("./components/App", () => {
+        /* eslint-disable global-require */
         const NextApp = require("./components/App").default;
+        /* eslint-enable global-require */
         render(NextApp);
     });
 }
