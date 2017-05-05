@@ -19,6 +19,8 @@
         "indent": ["error", 4],
 
         // ignores import/no-extraneous-dependencies for spec files
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.spec.{js,jsx}"]}]
+        // so test libs as enzyme can be installed as devDependencies
+        "import/no-extraneous-dependencies": ["error", 
+            {"devDependencies": ["**/*.spec.{js,jsx}"]}]
     }
 }
