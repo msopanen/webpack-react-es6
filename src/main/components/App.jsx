@@ -1,5 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { IntlProvider } from "react-intl";
 
 import Counter from "./Counter";
 import configureStore from "../utils/StoreFactory";
@@ -8,7 +9,9 @@ const store = configureStore({ counter: 0 });
 
 const App = () => (
   <Provider store={store}>
-    <Counter />
+    <IntlProvider locale="en" >
+      <Counter />
+    </IntlProvider>
   </Provider>
   );
 

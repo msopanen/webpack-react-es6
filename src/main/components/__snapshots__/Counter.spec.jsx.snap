@@ -1,21 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders initial state and plus and minus 1`] = `
-<Connect(Counter)
-  store={
-    Object {
-      "dispatch": [Function],
-      "getState": [Function],
-      "replaceReducer": [Function],
-      "subscribe": [Function],
-      Symbol(observable): [Function],
-    }
-  }
+<IntlProvider
+  locale="en"
 >
-  <Counter
-    counter={0}
-    onDecrement={[Function]}
-    onIncrement={[Function]}
+  <Connect(Counter)
     store={
       Object {
         "dispatch": [Function],
@@ -25,65 +14,83 @@ exports[`renders initial state and plus and minus 1`] = `
         Symbol(observable): [Function],
       }
     }
-    storeSubscription={
-      Subscription {
-        "listeners": Object {
-          "clear": [Function],
-          "notify": [Function],
-          "subscribe": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
+  >
+    <Counter
+      counter={0}
+      onDecrement={[Function]}
+      onIncrement={[Function]}
+      store={
+        Object {
           "dispatch": [Function],
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
           Symbol(observable): [Function],
-        },
-        "unsubscribe": [Function],
+        }
       }
-    }
-  >
-    <div>
-      <div
-        id="counter"
-      >
-        0
+      storeSubscription={
+        Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          },
+          "unsubscribe": [Function],
+        }
+      }
+    >
+      <div>
+        <label
+          htmlFor="plus"
+          id="counter"
+        >
+          <FormattedMessage
+            defaultMessage="Count: {count}"
+            description="Message to show count."
+            id="app.home.count"
+            values={
+              Object {
+                "count": 0,
+              }
+            }
+          >
+            <span>
+              Count: 
+            </span>
+          </FormattedMessage>
+        </label>
+        <button
+          id="plus"
+          onClick={[Function]}
+        >
+          -
+        </button>
+        <button
+          id="minus"
+          onClick={[Function]}
+        >
+          +
+        </button>
       </div>
-      <button
-        id="plus"
-        onClick={[Function]}
-      >
-        -
-      </button>
-      <button
-        id="minus"
-        onClick={[Function]}
-      >
-        +
-      </button>
-    </div>
-  </Counter>
-</Connect(Counter)>
+    </Counter>
+  </Connect(Counter)>
+</IntlProvider>
 `;
 
 exports[`renders initial state and plus and minus 2`] = `
-<Connect(Counter)
-  store={
-    Object {
-      "dispatch": [Function],
-      "getState": [Function],
-      "replaceReducer": [Function],
-      "subscribe": [Function],
-      Symbol(observable): [Function],
-    }
-  }
+<IntlProvider
+  locale="en"
 >
-  <Counter
-    counter={-1}
-    onDecrement={[Function]}
-    onIncrement={[Function]}
+  <Connect(Counter)
     store={
       Object {
         "dispatch": [Function],
@@ -93,65 +100,83 @@ exports[`renders initial state and plus and minus 2`] = `
         Symbol(observable): [Function],
       }
     }
-    storeSubscription={
-      Subscription {
-        "listeners": Object {
-          "clear": [Function],
-          "notify": [Function],
-          "subscribe": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
+  >
+    <Counter
+      counter={-1}
+      onDecrement={[Function]}
+      onIncrement={[Function]}
+      store={
+        Object {
           "dispatch": [Function],
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
           Symbol(observable): [Function],
-        },
-        "unsubscribe": [Function],
+        }
       }
-    }
-  >
-    <div>
-      <div
-        id="counter"
-      >
-        -1
+      storeSubscription={
+        Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          },
+          "unsubscribe": [Function],
+        }
+      }
+    >
+      <div>
+        <label
+          htmlFor="plus"
+          id="counter"
+        >
+          <FormattedMessage
+            defaultMessage="Count: {count}"
+            description="Message to show count."
+            id="app.home.count"
+            values={
+              Object {
+                "count": -1,
+              }
+            }
+          >
+            <span>
+              Count: -1
+            </span>
+          </FormattedMessage>
+        </label>
+        <button
+          id="plus"
+          onClick={[Function]}
+        >
+          -
+        </button>
+        <button
+          id="minus"
+          onClick={[Function]}
+        >
+          +
+        </button>
       </div>
-      <button
-        id="plus"
-        onClick={[Function]}
-      >
-        -
-      </button>
-      <button
-        id="minus"
-        onClick={[Function]}
-      >
-        +
-      </button>
-    </div>
-  </Counter>
-</Connect(Counter)>
+    </Counter>
+  </Connect(Counter)>
+</IntlProvider>
 `;
 
 exports[`renders initial state and plus and minus 3`] = `
-<Connect(Counter)
-  store={
-    Object {
-      "dispatch": [Function],
-      "getState": [Function],
-      "replaceReducer": [Function],
-      "subscribe": [Function],
-      Symbol(observable): [Function],
-    }
-  }
+<IntlProvider
+  locale="en"
 >
-  <Counter
-    counter={0}
-    onDecrement={[Function]}
-    onIncrement={[Function]}
+  <Connect(Counter)
     store={
       Object {
         "dispatch": [Function],
@@ -161,45 +186,74 @@ exports[`renders initial state and plus and minus 3`] = `
         Symbol(observable): [Function],
       }
     }
-    storeSubscription={
-      Subscription {
-        "listeners": Object {
-          "clear": [Function],
-          "notify": [Function],
-          "subscribe": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
+  >
+    <Counter
+      counter={0}
+      onDecrement={[Function]}
+      onIncrement={[Function]}
+      store={
+        Object {
           "dispatch": [Function],
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
           Symbol(observable): [Function],
-        },
-        "unsubscribe": [Function],
+        }
       }
-    }
-  >
-    <div>
-      <div
-        id="counter"
-      >
-        0
+      storeSubscription={
+        Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          },
+          "unsubscribe": [Function],
+        }
+      }
+    >
+      <div>
+        <label
+          htmlFor="plus"
+          id="counter"
+        >
+          <FormattedMessage
+            defaultMessage="Count: {count}"
+            description="Message to show count."
+            id="app.home.count"
+            values={
+              Object {
+                "count": 0,
+              }
+            }
+          >
+            <span>
+              Count: 
+            </span>
+          </FormattedMessage>
+        </label>
+        <button
+          id="plus"
+          onClick={[Function]}
+        >
+          -
+        </button>
+        <button
+          id="minus"
+          onClick={[Function]}
+        >
+          +
+        </button>
       </div>
-      <button
-        id="plus"
-        onClick={[Function]}
-      >
-        -
-      </button>
-      <button
-        id="minus"
-        onClick={[Function]}
-      >
-        +
-      </button>
-    </div>
-  </Counter>
-</Connect(Counter)>
+    </Counter>
+  </Connect(Counter)>
+</IntlProvider>
 `;

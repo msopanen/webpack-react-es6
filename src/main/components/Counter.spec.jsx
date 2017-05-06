@@ -1,5 +1,6 @@
 
 import React from "react";
+import { IntlProvider } from "react-intl";
 import { mount } from "enzyme";
 
 import Counter from "./Counter";
@@ -14,7 +15,9 @@ const clickButton = (wrapper, id) => {
 
 it("renders initial state and plus and minus", () => {
     const wrapper = mount(
-      <Counter store={store} />,
+      <IntlProvider locale="en" >
+        <Counter store={store} />
+      </IntlProvider>,
     );
 
     expect(wrapper).toMatchSnapshot();
