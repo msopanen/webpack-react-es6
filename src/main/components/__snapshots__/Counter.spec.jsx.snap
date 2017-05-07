@@ -11,7 +11,7 @@ exports[`renders initial state and plus and minus 1`] = `
         "getState": [Function],
         "replaceReducer": [Function],
         "subscribe": [Function],
-        Symbol(observable): [Function],
+        Symbol(Symbol.observable): [Function],
       }
     }
   >
@@ -25,7 +25,7 @@ exports[`renders initial state and plus and minus 1`] = `
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
-          Symbol(observable): [Function],
+          Symbol(Symbol.observable): [Function],
         }
       }
       storeSubscription={
@@ -42,7 +42,7 @@ exports[`renders initial state and plus and minus 1`] = `
             "getState": [Function],
             "replaceReducer": [Function],
             "subscribe": [Function],
-            Symbol(observable): [Function],
+            Symbol(Symbol.observable): [Function],
           },
           "unsubscribe": [Function],
         }
@@ -55,7 +55,6 @@ exports[`renders initial state and plus and minus 1`] = `
         >
           <FormattedMessage
             defaultMessage="Count: {count}"
-            description="Message to show count."
             id="app.home.count"
             values={
               Object {
@@ -97,7 +96,7 @@ exports[`renders initial state and plus and minus 2`] = `
         "getState": [Function],
         "replaceReducer": [Function],
         "subscribe": [Function],
-        Symbol(observable): [Function],
+        Symbol(Symbol.observable): [Function],
       }
     }
   >
@@ -111,7 +110,7 @@ exports[`renders initial state and plus and minus 2`] = `
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
-          Symbol(observable): [Function],
+          Symbol(Symbol.observable): [Function],
         }
       }
       storeSubscription={
@@ -128,7 +127,7 @@ exports[`renders initial state and plus and minus 2`] = `
             "getState": [Function],
             "replaceReducer": [Function],
             "subscribe": [Function],
-            Symbol(observable): [Function],
+            Symbol(Symbol.observable): [Function],
           },
           "unsubscribe": [Function],
         }
@@ -141,7 +140,6 @@ exports[`renders initial state and plus and minus 2`] = `
         >
           <FormattedMessage
             defaultMessage="Count: {count}"
-            description="Message to show count."
             id="app.home.count"
             values={
               Object {
@@ -183,7 +181,7 @@ exports[`renders initial state and plus and minus 3`] = `
         "getState": [Function],
         "replaceReducer": [Function],
         "subscribe": [Function],
-        Symbol(observable): [Function],
+        Symbol(Symbol.observable): [Function],
       }
     }
   >
@@ -197,7 +195,7 @@ exports[`renders initial state and plus and minus 3`] = `
           "getState": [Function],
           "replaceReducer": [Function],
           "subscribe": [Function],
-          Symbol(observable): [Function],
+          Symbol(Symbol.observable): [Function],
         }
       }
       storeSubscription={
@@ -214,7 +212,7 @@ exports[`renders initial state and plus and minus 3`] = `
             "getState": [Function],
             "replaceReducer": [Function],
             "subscribe": [Function],
-            Symbol(observable): [Function],
+            Symbol(Symbol.observable): [Function],
           },
           "unsubscribe": [Function],
         }
@@ -227,7 +225,6 @@ exports[`renders initial state and plus and minus 3`] = `
         >
           <FormattedMessage
             defaultMessage="Count: {count}"
-            description="Message to show count."
             id="app.home.count"
             values={
               Object {
