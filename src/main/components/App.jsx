@@ -14,7 +14,7 @@ import * as localeData from "../locales/data.json";
 addLocaleData([...en, ...fi]);
 
 const store = configureStore({ counter: 0 });
-const userLocale = "en";
+const userLocale = "fi";
 
 const App = () => (
   <Provider store={store}>

@@ -7,6 +7,7 @@
     "build": "webpack --config config/production.config.js --colors -p",
     "clean": "rimraf dist node_modules coverage translated-messages",
     "start": "node config/server.js",
+    "start:prod": "node src/utils/express.js",
     "lint": "eslint --ext .js --ext .jsx src/",
     "test": "jest --config config/jest.json",
     "watch-test": "yarn test -- --watch",
@@ -24,7 +25,8 @@
     "Jest",
     "HMR",
     "Flux",
-    "Redux"
+    "Redux",
+    "React-intl"
   ],
   "author": "msopanen",
   "license": "MIT",
